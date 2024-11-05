@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stroke Prediction using Machine Learning Portfolio">
+    <title>Stroke Prediction Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#methods">Methods</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Stroke Prediction Using Machine Learning</h1>
+            <h2>By Sahil Prabhakar Deshmukh</h2>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About the Project</h2>
+        <p>Stroke is a disease that affects the arteries leading to and within the brain. A stroke occurs when a blood vessel that carries oxygen and nutrients to the brain is either blocked by a clot or ruptures. According to the WHO, stroke is the 2nd leading cause of death worldwide. Globally, 3% of the population are affected by sub-arachnoid hemorrhage, 10% with intra-cerebral hemorrhage, and the majority of 87% with ischemic stroke. 80% of the time these strokes can be prevented. Early detection of stroke is a crucial step for efficient treatment to be able to do that, Machine Learning (ML) is an ultimate technology which can help health professionals make clinical decisions and predictions. Our specific Goal is to predict whether a person will incur brain stroke based on the entered parameters. These entered parameters are analysed by the ML model to predict the target.</p>
+    </section>
+
+
+
+    <section id="methods">
+        <h2>Methods and Tools</h2>
+        <h3>Data Source: Kaggle Stroke Dataset</h3>
+        <p>The Kaggle Stroke Dataset is the foundation for this stroke prediction project. It contains information on 5,110 individuals, with features such as age, gender, hypertension, heart disease, and other health-related factors. The dataset is highly imbalanced, with only a small percentage of the entries indicating a stroke, which necessitates techniques like oversampling to improve model performance. This dataset provides a rich collection of attributes that are crucial for understanding stroke risk, making it an ideal source for developing and testing predictive machine learning models.</p>
+        <h3>Data Processing:</h3>
+        <p>Data preprocessing is a critical step in preparing the dataset for machine learning. Using Python libraries like Pandas and Numpy, the data was cleaned and transformed for analysis. Missing values were handled by imputing median values, categorical variables were encoded using one-hot encoding, and the dataset was normalized to ensure all features contributed equally to the model. Additionally, oversampling techniques were applied to balance the dataset, which was crucial for improving model performance, particularly given the class imbalance between stroke and non-stroke cases.</p>
+        <div class="image-center">
+            <img src="graph1.png" alt="Stroke Prediction - Center" />
+        </div>
+        <div class="image-center">
+            <img src="graph2.png" alt="Stroke Prediction - Center" />
+        </div>
+        <div class="image-center">
+            <img src="graph3.png" alt="Stroke Prediction - Center" />
+        </div>
+        <div class="image-center">
+            <img src="graph4.png" alt="Stroke Prediction - Center" />
+        </div>
+        <div class="image-center">
+            <img src="graph5.png" alt="Stroke Prediction - Center" />
+        </div>
+        <div class="image-center">
+            <img src="graph6.png" alt="Stroke Prediction - Center" />
+        </div>
+
+        <h3>Algorithms: Random Forest, XGBoost</h3>
+        <p>Several machine learning algorithms were employed to predict the likelihood of stroke, including Random Forest,  and XGBoost. These models were chosen for their effectiveness in classification tasks and their ability to handle both categorical and numerical data. Random Forest, a robust ensemble method, performed the best, achieving the highest accuracy. Decision Tree provided interpretable results, while KNN used proximity-based learning to classify instances. XGBoost, known for its speed and performance, was also employed to maximize prediction accuracy.</p>
+         <!-- Center-aligned image -->
+        <div class="image-center">
+            <img src="rf.png" alt="Stroke Prediction - Center" />
+        </div>
+        <div class="image-center">
+            <img src="xboost.png" alt="Stroke Prediction - Center" />
+        </div>
+        <h3>Evaluation Metrics: Accuracy, Precision, Recall, F1-Score</h3>
+        <p>To evaluate the performance of the machine learning models, key metrics such as Accuracy, Precision, Recall, and F1-Score were used. Accuracy measures the proportion of correct predictions, but can be misleading in imbalanced datasets. Precision focuses on the model’s ability to correctly identify true positives, which is critical to minimize false alarms. Recall evaluates the model’s effectiveness in detecting actual stroke cases, ensuring high sensitivity. The F1-Score, a harmonic mean of Precision and Recall, provides a balanced metric that is particularly useful for assessing performance on imbalanced datasets.</p>
+        
+    </section>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Email: sahildeshmukh@example.com</p>
+        <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
+    </footer>
+
+</body>
+</html>

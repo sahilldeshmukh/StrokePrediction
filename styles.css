@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-content h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.image-container img {
+    max-width: 100%; /* Scales the image to fit the container */
+    height: auto; /* Maintains the aspect ratio */
+    border: 2px solid #ccc; /* Optional border for styling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for styling */
+  }
+
+/* Center image alignment */
+.image-center {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+  }
+
+
+section {
+    padding: 3em 5%;
+    background-color: #f4f4f4;
+    margin-bottom: 2em;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+
+section p, section ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+footer a {
+    color: #ff8800;
+}
